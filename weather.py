@@ -196,60 +196,6 @@
 # print(best_employee(work_hours))
 
 
-# --                 -----------------------------------------------------       ---------------------------------
 
 
-from random import  shuffle
-#
-example = [1,2,3,4,5,6,7]
-#
-# result = shuffle(example)
-# # print(result)
-
-
-def shuffle_list(my_list):
-    shuffle(my_list)
-    return my_list
-
-# result = shuffle_list(example)
-# print(result)
-
-my_list = [' ','O',' ']
-# print(shuffle_list(my_list))
-
-def player_guess():
-    guess = ' '
-    while guess not in ['0','1','2']:
-
-        guess = input("Pick a number from : 0, 1, or 2 : ")
-
-    return int(guess)
-# print(player_guess())
-
-# my_index = player_guess()
-# print(my_index)
-
-def check_guess(mylist, guess):
-    if mylist[guess] =='O':
-        print("Correct")
-
-    else:
-        print("Wrong Guess")
-        print(my_list)
-
-
-# INIAL LIST
-mylist= [' ','O',' ']
-
-#SHUFFLE LIST
-mixed_list = shuffle_list(mylist)
-
-# USER GUESS
-guess = player_guess()
-
-# CHECK GUESS
-check_guess(mixed_list,guess)
-
-
-# guess check game            ----------------------------------
 
