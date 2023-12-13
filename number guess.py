@@ -13,8 +13,8 @@ def player_guess():
 
         guess = input("Enter your guess here: 0, 1, or 2 ")
 
-    return int(guess)
 
+    return int(guess)
 def check_guess(mylist,guess):
 
     if mylist[guess] == 'O':
@@ -36,3 +36,5 @@ guess = player_guess()
 
 # CHECK GUESS
 check_guess(mixed_list,guess)
+
+

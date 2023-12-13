@@ -5,6 +5,11 @@ asking = input("Enter your input:  Y/n  ")
 while asking == 'y':
     num = random.randint(1,6)
 
+    # for i in range(num):
+    #     print(num)
+
+
+
     if num == 1:
         print(1)
 
