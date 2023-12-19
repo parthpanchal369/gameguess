@@ -55,18 +55,63 @@
 # result = my_string.split("a")
 # print(result)
 
-my_string = "bcdefghijklmnopqrstuvwxyza"
-new_str = ''
-i = 0
-for char in my_string:
-    i+=1
+# my_string = "abcdefghijklmnopqrstuvwxyzABCDEfghijklmnopqrstuvwxyz"
+# new_str = ''
+#
+# for char in my_string:
+#
+#     if char.lower() not in ('a','e','i','o','u'):
+#         new_str+= char
+#
+#     else:
+#         print(new_str)
+#         new_str =''
+#
+# print(new_str)
 
-    if char =="a" or char =="e" or char == "i" or char =="o" or char =="u":
-        print(new_str)
-        new_str = ''
+
+my_string = input("Enter your string: ")
+new_string = ''
+
+for val in my_string:
+
+    if val.lower() not in ('a','e','i','o','u'):
+        new_string += val
+
+    elif new_string == " ":
+        continue
 
     else:
-        new_str+= char
+        if new_string:
+            print(new_string)
+        new_string= ''
+
+if new_string:
+    print(new_string)
+#
+
+# my_string = input("string here: ")
+# new_string = ''
+#
+# for val in my_string:
+#     if val.lower() not in ('a', 'e', 'i', 'o', 'u',):
+#         new_string += val
+#     elif val == ' ':
+#         continue
+#     else:
+#         if new_string:
+#             print(new_string)
+#         new_string = ''
+#
+# if new_string:
+#     print(new_string)
+
+
+
+
+
+
+
 
 
 
