@@ -1,64 +1,78 @@
-# def myfunc(*args):
-#     return [a for a in args if a%2 == 1]
+# Python program to add two numbers
+
+# num1 = int(input("Entyer your number: "))
+# num2 = int(input("Enter your second number: "))
 #
-# result =myfunc(1,2,3,4,5,6)
-# print(result)
+# num3 = num1 + num2
+# print(f'Addition oftwo number is  {num3}')
+
+# Max of two numbers
 
 
-
-# def palindrome(string):
+# num1 = int(input("Enter your firs  number: "))
+# num2 = int(input("Enter your second number"))
 #
-#     new_str = str(string)
+# # result = max(num1, num2)
+# # print(result)
 #
-#     return new_str == string[::-1]
-#
-# string = input("Enter your string here:  ")
-#
-# if palindrome(string):
-#     print("It is palindrome")
+# if num1 > num2:
+#     print(num1)
 #
 # else:
-#     print("It is not a palindorme")
+#     print(num2)
 
-list1 =['parth.panchal@prama.ai',
-        'vrutik@prama.ai',
-        'parthpanchal801@gmail.com',
-        'kevalradadiya@gmai.com'
-        ]
+# Python program to factorial of number
 
-
-list2 = ['parth.panchal@prama.ai',
-         'modi.vedant@prama.ai',
-         'yash.makvana@prama.ai',
-         'vrutik@prama.ai',
-         'udai.hirpara@prama.ai']
-
-regester_email = []
-
-for name in list1:
-    if name.endswith("@prama.ai"):
-        regester_email.append(name)
+# def factorail(n):
 #
-print("Who have register for meetup from prama: ", regester_email)
+#     if n == 0 or n == 1:
+#         return 1
+#
+#     result = n * factorail(n-1)
+#     return result
+#
+# num1 = int(input())
+#
+# print(factorail(num1))
 
 
-# list1 = ['parth.panchal@prama.ai',
-#          'vrutik@prama.ai',
-#          'parthpanchal801@gmail.com',
-#          'kevalradadiya@gmai.com']
+# def factorail(n):
 #
-# list2 = ['parth.panchal@prama.ai',
-#          'modi.vedant@prama.ai',
-#          'yash.makvana@prama.ai',
-#          'vrutik@prama.ai',
-#          'udai.hirpara@prama.ai']
+#     if n < 0:
+#         return 0
 #
-# common_prama_emails = []
+#     elif n == 0 or n ==1:
+#         return  1
 #
-# for email1 in list1:
-#     if email1.endswith('@prama.ai') and email1 in list2:
-#         common_prama_emails.append(email1)
+#     else:
+#         fact = 1
+#         while(n > 1):
+#             fact *= n
+#             n -= 1
+#         return fact
 #
-# print("Common email addresses with '@prama.ai':", common_prama_emails  )
-#
-#
+# n = int(input())
+# print(factorail(n))
+
+
+# intrest of rate
+
+
+def simple_interest(p, t, r):
+
+    print("principle  amount is: ",p)
+    print("Time period is ", t)
+    print("rate of interest is ", r)
+
+    si = p * t * r / 100
+
+    print(f'simple interest is {si}')
+
+
+simple_interest(25000, 1, 3)
+
+
+def armstrong(number):
+
+
+
