@@ -58,21 +58,48 @@
 # intrest of rate
 
 
-def simple_interest(p, t, r):
-
-    print("principle  amount is: ",p)
-    print("Time period is ", t)
-    print("rate of interest is ", r)
-
-    si = p * t * r / 100
-
-    print(f'simple interest is {si}')
-
-
-simple_interest(25000, 1, 3)
+# def simple_interest(p, t, r):
+#
+#     print("principle  amount is: ",p)
+#     print("Time period is ", t)
+#     print("rate of interest is ", r)
+#
+#     si = p * t * r / 100
+#
+#     print(f'simple interest is {si}')
+#
+#
+# simple_interest(25000, 1, 3)
 
 
 def armstrong(number):
+    numbers = len(str(number))
+    sum = 0
+    temp = number
+
+    while temp > 0:
+        digit = temp % 10
+        cube = digit ** numbers
+        sum = sum+cube
+        temp = temp //10
+
+    if number == sum:
+        return True
+
+    else:
+        return False
+
+number = int(input("Enter your number"))
+for num in range(1,number+1):
+    if armstrong(num):
+        print(num,"This is armstrong number")
+
+
+
+
+
+
+
 
 
 

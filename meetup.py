@@ -23,7 +23,7 @@
 list1 =['parth.panchal@prama.ai',
         'vrutik@prama.ai',
         'parthpanchal801@gmail.com',
-        'kevalradadiya@gmai.com'
+        'kevalradadiya@gmail.com'
         ]
 
 

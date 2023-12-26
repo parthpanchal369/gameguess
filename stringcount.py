@@ -93,7 +93,7 @@ if new_string:
 # my_string = input("string here: ")
 # new_string = ''
 #
-# for val in my_string:
+# for val in my_string: 
 #     if val.lower() not in ('a', 'e', 'i', 'o', 'u',):
 #         new_string += val
 #     elif val == ' ':
